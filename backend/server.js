@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-mongoose.connect("mongodb://localhost:27017/virtual_classroom", {
+mongoose.connect("mongodb+srv://chijithjerin_db_user:Y7ojh6iJZXdKvOf8@hacklehem.76wdx41.mongodb.net/virtual_classroom?retryWrites=true&w=majority&appName=Hacklehem", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
