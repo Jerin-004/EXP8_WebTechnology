@@ -15,12 +15,12 @@ function App() {
   }, []);
 
   const fetchAssignments = async () => {
-    const res = await axios.get("http://localhost:5000/api/assignments");
+    const res = await axios.get("https://exp8-webtechnology.onrender.com/api/assignments");
     setAssignments(res.data);
   };
 
   const addAssignment = async () => {
-    await axios.post("http://localhost:5000/api/assignments", {
+    await axios.post("https://exp8-webtechnology.onrender.com/api/assignments", {
       title,
       subject,
       dueDate,
@@ -35,7 +35,7 @@ function App() {
   };
 
   const deleteAssignment = async (id) => {
-    await axios.delete(`http://localhost:5000/api/assignments/${id}`);
+    await axios.delete(`https://exp8-webtechnology.onrender.com/api/assignments/${id}`);
     fetchAssignments();
   };
 
